@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Besar HTML</title>
+</head>
+<body>
+    <form action="buatForm.html" method="post">
+
+        <fieldset>
+            <!-- Membuat Form Data Mahasiswa -->
+            <legend>Data Mahasiswa</legend>
+            
+            <!-- Input nama dan email -->
+            <br>
+            Nama <input type="text" name="nama" id="nama" size="30"> <br><br>
+            Email <input type="text" name="email" id="email" size="30"> <br><br>
+            
+            <!-- Input tanggal lahir -->
+            Tanggal lahir <input type="date" name="tanggal-lahir" id="tanggal-lahir"> <br><br>
+            
+            <!-- Input jenis kelamin -->
+            Jenis Kelamin 
+            <select name="gender" id="gender">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            <br><br>
+            
+            <!-- Input alamat -->
+            Alamat <br>
+            <textarea name="alamat" id="alamat" rows="5" cols="50"></textarea>
+        </fieldset>
+        
+        <br>    
+        <fieldset>
+            <!-- Membuat Komentar -->
+            <legend>Komentar</legend>
+            
+            <br>
+            Darimana Anda mengetahui buku ini?
+            <select name="sumber" id="sumber">
+                <option value="google">Google</option>
+                <option value="youtube">Youtube</option>
+                <option value="instagram">Instagram</option>
+                <option value="koran">Koran</option>
+                <option value="radio">Radio</option>
+            </select>
+            <br><br>
+    
+            Bagaimana Menurut Anda terhadap buku ini?
+            <br>
+            <input type="radio" name="rating" id="biasa"> Biasa
+            <input type="radio" name="rating" id="bagus"> Bagus
+            <input type="radio" name="rating" id="menarik"> Menarik
+            <br><br>
+    
+            Komentar Anda:
+            <br>
+            <textarea name="komentar" id="komentar" rows="5" cols="50"></textarea> <br><br>
+    
+            <input type="checkbox" name="email-info" id="email-info" checked> Kirim ke Email bila ada info terbaru
+            
+        </fieldset>
+
+        <br>
+        <button type="submit" style="margin: auto; display: block;">Kirim</button>
+        
+    </form>
+</body>
+</html>
