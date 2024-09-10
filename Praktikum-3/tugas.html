@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tugas JavaScript</title>
+</head>
+<body>
+    <form action="#" method="post">
+        First Name : <input type="text" name="first-name" id="first-name"> <br><br>
+        Last Name : <input type="text" name="last-name" id="last-name"> <br><br>
+
+        <button type="button" id="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("submit").onclick = function (){
+            let firstName = document.getElementById("first-name").value;
+            let lastName = document.getElementById("last-name").value;
+            
+            if (firstName === "" && lastName === "") {
+                alert("Harap isi First Name dan Last Name!");
+            } else if (firstName === ""){
+                alert("Harap isi First Name!");
+            } else if (lastName === ""){
+                alert("Harap isi Last Name!");
+            } else {
+                alert("Selamat Datang " + firstName + " " + lastName);
+            }
+        }
+    </script>
+</body>
+</html>
