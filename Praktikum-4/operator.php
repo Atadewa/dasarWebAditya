@@ -53,4 +53,11 @@ echo "Nilai variabel a($a) setelah dibagi dengan $b adalah " . $a/=$b;
 echo "<br>";
 echo "Nilai variabel a($a) setelah disisa bagi dengan $b adalah " . $a%=$b;
 echo "<br>";
+
+$hasilIndentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "<br>";
+echo "Hasil perbandingan $a Identik (nilai dan tipe data sama) dengan $b : " . ($hasilIndentik ? 'true' : 'false') . "<br>";
+echo "Hasil perbandingan $a Tidak Identik (nilai atau tipe data tidak sama) dengan $b : " . ($hasilTidakIdentik ? 'true' : 'false') . "<br>";
 ?>
