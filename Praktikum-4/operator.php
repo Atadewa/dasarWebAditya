@@ -41,4 +41,16 @@ echo "Hasil operator logika $a AND $b : " . ($hasilAnd ? 'true' : 'false') . "<b
 echo "Hasil operator logika $a OR $b : " . ($hasilOr ? 'true' : 'false') . "<br>";
 echo "Hasil operator logika NOT $a : " . ($hasilNotA ? 'true' : 'false') . "<br>";
 echo "Hasil operator logika NOT $b : " . ($hasilNotB ? 'true' : 'false') . "<br>";
+
+echo "<br>";
+echo "Nilai variabel a($a) setelah dijumlah dengan $b adalah " . $a+=$b;
+echo "<br>";
+echo "Nilai variabel a($a) setelah dikurangi dengan $b adalah " . $a-=$b;
+echo "<br>";
+echo "Nilai variabel a($a) setelah dikali dengan $b adalah " . $a*=$b;
+echo "<br>";
+echo "Nilai variabel a($a) setelah dibagi dengan $b adalah " . $a/=$b;
+echo "<br>";
+echo "Nilai variabel a($a) setelah disisa bagi dengan $b adalah " . $a%=$b;
+echo "<br>";
 ?>
