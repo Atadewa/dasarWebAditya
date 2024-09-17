@@ -78,5 +78,15 @@ echo "<br><br>";
 echo "Total nilai ujian matematika setelah mengabaikan 2 nilai tertinggi dan 2 nilai terendah: $totalNilai <br>";
 echo "Rata-rata nilai ujian matematika setelah mengabaikan 2 nilai tertinggi dan 2 nilai terendah: " . $totalNilai/6;
 
+// Soal cerita 2
+$harga = 120000;
+$diskon = 0;
+if ($harga > 100000) {
+    $diskon = 20;
+}
 
+$hargaAkhir = $harga - ($harga * $diskon/100);
+
+echo "<br><br>";
+echo "Harga yang harus dibayar: $hargaAkhir"; 
 ?>
