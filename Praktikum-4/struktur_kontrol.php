@@ -56,4 +56,27 @@ foreach ($nilaiSiswa as $nilai) {
     }
     echo "Nilai: $nilai (Lulus) <br>";
 }
+
+// Soal cerita 1
+$nilaiUjian = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
+
+// Mengurutkan nilai dari yang terendah ke tertinggi
+sort($nilaiUjian);
+
+array_shift($nilaiUjian); // Menghapus nilai terendah pertama
+array_shift($nilaiUjian); // Menghapus nilai terendah kedua
+array_pop($nilaiUjian);   // Menghapus nilai tertinggi pertama
+array_pop($nilaiUjian);   // Menghapus nilai tertinggi kedua
+
+// Menghitung nilai setelah mengabaikan 2 nilai tertinggi dan 2 nilai terendah
+$totalNilai = 0;
+foreach ($nilaiUjian as $nilaiMTK) {
+    $totalNilai += $nilaiMTK;
+}
+
+echo "<br><br>";
+echo "Total nilai ujian matematika setelah mengabaikan 2 nilai tertinggi dan 2 nilai terendah: $totalNilai <br>";
+echo "Rata-rata nilai ujian matematika setelah mengabaikan 2 nilai tertinggi dan 2 nilai terendah: " . $totalNilai/6;
+
+
 ?>
