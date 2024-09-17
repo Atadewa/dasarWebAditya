@@ -60,4 +60,12 @@ $hasilTidakIdentik = $a !== $b;
 echo "<br>";
 echo "Hasil perbandingan $a Identik (nilai dan tipe data sama) dengan $b : " . ($hasilIndentik ? 'true' : 'false') . "<br>";
 echo "Hasil perbandingan $a Tidak Identik (nilai atau tipe data tidak sama) dengan $b : " . ($hasilTidakIdentik ? 'true' : 'false') . "<br>";
+
+// Soal cerita
+$jumlahKursi = 45;
+$jumlahKursiTersedia = $jumlahKursi - 28;
+$persentasiJumlahKursiTersedia = intval($jumlahKursiTersedia / 45 * 100);
+
+echo "<br>";
+echo "Kursi yang masih kosong pada restoran tersebut sebanyak $persentasiJumlahKursiTersedia persen";
 ?>
