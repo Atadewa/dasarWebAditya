@@ -89,4 +89,11 @@ $hargaAkhir = $harga - ($harga * $diskon/100);
 
 echo "<br><br>";
 echo "Harga yang harus dibayar: $hargaAkhir"; 
+
+// Soal cerita 3
+$poin = 600;
+
+echo "<br><br>";
+echo "Total skor pemain adalah: $poin <br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? " . ($poin > 500 ? 'YA' : 'TIDAK');
 ?>
