@@ -30,4 +30,15 @@ echo "Hasil perbandingan $a lebih kecil dari $b : " . ($hasilLebihKecil ? 'true'
 echo "Hasil perbandingan $a lebih besar dari $b : " . ($hasilLebihBesar ? 'true' : 'false') . "<br>";
 echo "Hasil perbandingan $a lebih kecil dari atau sama dengan $b : " . ($hasilLebihKecilSama ? 'true' : 'false') . "<br>";
 echo "Hasil perbandingan $a lebih besar dari atau sama dengan $b : " . ($hasilLebihBesarSama ? 'true' : 'false') . "<br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
+
+echo "<br>";
+echo "Hasil operator logika $a AND $b : " . ($hasilAnd ? 'true' : 'false') . "<br>";
+echo "Hasil operator logika $a OR $b : " . ($hasilOr ? 'true' : 'false') . "<br>";
+echo "Hasil operator logika NOT $a : " . ($hasilNotA ? 'true' : 'false') . "<br>";
+echo "Hasil operator logika NOT $b : " . ($hasilNotB ? 'true' : 'false') . "<br>";
 ?>
