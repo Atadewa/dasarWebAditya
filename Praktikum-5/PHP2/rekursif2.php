@@ -38,6 +38,7 @@ function tampilkanMenuBertingkat (array $menu){
     echo "<ul>";
     foreach ($menu as $key => $item) {
         echo "<li>{$item['nama']}</li>";
+        tampilkanMenuBertingkat($item['subMenu'] ?? []);
     }
     echo "</ul>";
 }
