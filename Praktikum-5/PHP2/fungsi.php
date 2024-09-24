@@ -6,24 +6,16 @@ function hitungUmur($thn_lahir, $thn_sekarang) {
     return $umur;
 }
 
-echo "Umur saya adalah " . hitungUmur(2005, 2024) . " tahun";
-
-echo "<br/><br/>";
-
 function perkenalan($nama, $salam="Assalamualaikum"){
     echo $salam.", ";
     echo "Perkenalkan, nama saya " .$nama. "<br/>";
+
+    // Memanggil fungsi lain
+    echo "Saya berusia " . hitungUmur(2005, 2024) . " tahun<br/>";
     echo "Senang berkenalan dengan Anda<br/>";
 }
 
-// Memanggil fungsi yang sudah dibuat
-perkenalan("Hamdana", "Hallo");
+// Memanggil fungsi perkenalan
+perkenalan("Aditya Atadewa");
 
-echo "<hr>";
-
-$saya = "Aditya Atadewa";
-$ucapanSalam = "Selamat pagi";
-
-// Memanggil lagi tanpa mengisi parameter salam
-perkenalan ($saya);
 ?>
