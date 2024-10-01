@@ -11,10 +11,24 @@
             'nama' => 'Elok Nur Hamdana',
             'domisili' => 'Malang',
             'jenis_kelamin' => 'Perempuan' ];
-        
-        echo "Nama : {$Dosen ['nama']} <br>";
-        echo "Domisili : {$Dosen ['domisili']} <br>";
-        echo "Jenis Kelamin : {$Dosen ['jenis_kelamin']} <br>";
     ?>
+
+    <h2>Data Dosen</h2>
+    <table border="1" cellpadding="10" cellspacing="10" style="border-collapse: collapse;">
+        <thead>
+            <tr style="background-color: #D8D9DA">
+                <th>Nama</th>
+                <th>Domisili</th>
+                <th>Jenis Kelamin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><?php echo $Dosen['nama'];?></td>
+                <td><?php echo $Dosen['domisili'];?></td>
+                <td><?php echo $Dosen['jenis_kelamin'];?></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
