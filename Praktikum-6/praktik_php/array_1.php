@@ -9,9 +9,9 @@
     <?php 
         $Listdosen = ["Elok Nur Hamdana", "Unggul Pemenang", "Bagus Nugraha"];
 
-        echo $Listdosen[2] . "<br>";
-        echo $Listdosen[0] . "<br>";
-        echo $Listdosen[1] . "<br>";
+        foreach ($Listdosen as $namaDosen) {
+            echo $namaDosen . "<br>";
+        }
     ?>
 </body>
 </html>
