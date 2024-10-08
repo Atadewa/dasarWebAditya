@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Form Input dengan Validasi</h1>
-    <form id="myForm" method="post" action="proses_validasi.php">
+    <form id="myForm" method="post">
         <label for="nama">Nama:</label>
         <input type="text" name="nama" id="nama">
         <span id="nama-error" style="color: red;"></span>
@@ -18,15 +18,19 @@
         <br><br>
 
         <input type="submit" value="Submit">
+        <span id="form-success" style="color: green;"></span>
     </form>
 
     <script>
         $(document).ready(function() {
             $("#myForm").submit(function(event){
+                event.preventDefault(); 
+
                 var nama = $("#nama").val();
                 var email = $("#email").val();
                 var valid = true;
 
+                // Validasi form
                 if (nama === "") {
                     $("#nama-error").text("Nama harus diisi.");
                     valid = false;
@@ -41,11 +45,25 @@
                     $("#email-error").text("");
                 }
 
-                if (!valid) {
-                    (event.preventDefault());
+                if (valid) {
+                    $.ajax({
+                        url: "proses_validasi.php", 
+                        type: "POST",
+                        data: {
+                            nama: nama,
+                            email: email
+                        },
+                        success: function(response) {
+                            $("#form-success").text("Form berhasil dikirim!");
+                            console.log("Response dari server: " + response);
+                        },
+                        error: function() {
+                            $("#form-success").text("Terjadi kesalahan saat mengirim data.");
+                        }
+                    });
                 }
-            })
-        })
+            });
+        });
     </script>
 </body>
 </html>
