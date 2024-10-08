@@ -41,4 +41,13 @@ if (preg_match($pattern, $text, $matches)) {
 } else {
     echo "Tidak ada yang cocok!";
 }
+
+echo "<br>";
+$pattern = '/a{2,4}/';
+$text = 'I have aaa apples.';
+if (preg_match($pattern, $text, $matches)) {
+    echo "Cocokkan: " . $matches[0];
+} else {
+    echo "Tidak ada yang cocok!";
+}
 ?>
