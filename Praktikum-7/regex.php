@@ -32,4 +32,13 @@ if (preg_match($pattern, $text, $matches)) {
 } else {
     echo "Tidak ada yang cocok!";
 }
+
+echo "<br>";
+$pattern = '/apple?/';
+$text = 'I like appl pie.';
+if (preg_match($pattern, $text, $matches)) {
+    echo "Cocokkan: " . $matches[0];
+} else {
+    echo "Tidak ada yang cocok!";
+}
 ?>
